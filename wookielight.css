@@ -1,0 +1,186 @@
+html {
+  font-family: "Ubuntu Mono";
+  font-size: 13px;
+  background-color: #111;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+body {
+	margin: 0;
+  padding: 0.5ex 1.5ex;
+}
+body.console {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.6s ease-out;
+          transition: opacity 0.6s ease-out;
+}
+body.console:hover { opacity: 1; }
+body.normal {
+	line-height: 3.2ex;
+}
+
+hr { margin: 0.5em 2em; }
+
+a {
+	color: inherit;
+}
+
+.line  { padding: 0.2ex 0; }
+.time  { color: #34D1B2; }
+.place { color: #ae81ff; }
+
+/* Nicks */
+
+.sender[type=normal] { color: #8996A8; margin-right: .5ex;
+  -webkit-transition: color 0.3s;
+          transition: color 0.3s;
+}
+.sender[type=myself] { color: #34D1B2; margin-right: .5ex; }
+
+body.normal .line {
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+body.normal .line:hover { background-color: #222;  }
+body.normal .line:hover .sender[type=normal] { color: #5ED1BA; }
+
+/* Messages */
+
+.message[type=privmsg] { color: #FFFFFF; }
+.message[type=action] { color: inherit;}
+.message[type=notice] { color: #4B5ED7; }
+.message[type=system] { color: #808080; }
+.message[type=error] { color: #80E800; font-weight: bold; }
+.message[type=reply] { color: #A1F43D; }
+.message[type=error_reply] { color: #B7F46E; }
+.message[type=dcc_send_send] { color: #5e5960; }
+.message[type=dcc_send_receive] { color: #5e5960; }
+.message[type=join] { color: #5e5960; }
+.message[type=part] { color: #5e5960; }
+.message[type=quit] { color: #5e5960; }
+.message[type=kick] { color: #899a95; }
+.message[type=kill] { color: #899a95; }
+.message[type=nick] { color: #5e5960; }
+.message[type=mode] { color: #8e9c69; }
+.message[type=topic] { color: #8e9c69; }
+.message[type=invite] { color: #daefa3; font-style: italic; }
+.message[type=wallops] { color: #5e5960; }
+.message[type=debug_send] { color: #5e5960; }
+.message[type=debug_receive] { color: #5e5960; }
+
+.highlight {
+	color: #80E800;
+	font-weight: normal;
+}
+
+/* Special spans */
+
+.url {
+	word-break: break-all;
+}
+.address {
+	text-decoration: underline; word-break: break-all;
+}
+
+/* Messages in main view, but not console */
+body.normal .message[type=privmsg]          { padding-left: 22ex; display: block; }
+
+body.normal .message[type=notice]           { padding-left: 22ex; display: block; }
+body.normal .message[type=join]             { padding-left: 22ex; }
+body.normal .message[type=part]             { padding-left: 22ex; }
+body.normal .message[type=quit]             { padding-left: 22ex; }
+body.normal .message[type=kick]             { padding-left: 22ex; }
+body.normal .message[type=kill]             { padding-left: 22ex; }
+body.normal .message[type=nick]             { padding-left: 22ex; }
+body.normal .message[type=mode]             { padding-left: 22ex; }
+body.normal .message[type=topic]            { padding-left: 22ex; }
+body.normal .message[type=invite]           { padding-left: 22ex; }
+body.normal .message[type=wallops]          { padding-left: 22ex; }
+
+body.normal .message[type=system]           { padding-left: 22ex; }
+body.normal .message[type=error]            { padding-left: 22ex; }
+body.normal .message[type=reply]            { padding-left: 22ex; display: block; }
+body.normal .message[type=error_reply]      { padding-left: 22ex; }
+body.normal .message[type=dcc_send_send]    { padding-left: 22ex; }
+body.normal .message[type=dcc_send_receive] { padding-left: 22ex; }
+
+body.normal .message[type=debug_send]       { padding-left: 22ex; }
+body.normal .message[type=debug_receive]    { padding-left: 22ex; }
+
+/* Spans in line */
+
+body.normal .time {
+	display: block;
+	float: right;
+	padding-left: 1ex;
+	visibility: hidden;
+}
+body.normal .line:hover .time {
+	visibility: visible;
+}
+
+body.normal .sender[type=normal], body.normal .sender[type=myself] {
+	display: block;
+	float: left;
+	padding-right: 0.3ex;
+	text-align: right;
+	width: 20ex;
+}
+
+body.normal div.line[type=action] .sender[type=normal], div.line[type=action] .sender[type=myself] {
+	width: auto;
+	padding-left: 19ex;
+	margin-right: 1ex;
+	color: #8996A8;
+	background-color: transparent;
+}
+
+body.normal div.line[type=action] .sender[type=normal]::before, div.line[type=action] .sender[type=myself]::before {
+	content: "•";
+	padding-right: 1.5ex;
+}
+
+
+body.normal .line[highlight=true] {
+  -webkit-animation: myanim 8s infinite;
+}
+
+@-webkit-keyframes myanim {
+  0%   { background-color: #222; }
+  50%  { background-color: #000; }
+  100% { background-color: #222; }
+}
+
+body.normal .line[highlight=true] > .sender[type=normal] {
+	color: #00A383;
+}
+
+body.normal .sender[type=normal]:after {
+	content: " ·";
+	color: #539700;
+}
+
+body.normal .line[highlight=true] > .sender[type=normal]:after {
+  content: " ◦";
+}
+
+body.normal .sender[type=myself]:after {
+	content: " ∴";
+	color: #A1F43D;
+}
+
+.line[highlight=true] {
+  background-color: transparent;
+}
+
+/* disable funky mirc colours */
+
+.effect[color-number] { color: inherit; background-color: inherit; font-style: italic; }
+
+

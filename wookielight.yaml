@@ -1,0 +1,51 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'.
+# You cannot use color names.
+
+log-view:
+  nickname-format: '%n'
+input-text:
+  font-family: 'Ubuntu Mono'
+  font-size: 13.0
+  background-color: '#181818'
+  color: '#ffffff'
+member-list:
+  font-family: 'Ubuntu Mono'
+  font-size: 12.0
+  color: '#bbb'
+  background-color: '#000000'
+  operator:
+    color: '#5ED1BA'
+  selected:
+    color: '#E9C062'
+    background:
+      # gradient
+      top-line-color: '#222'
+      bottom-line-color: '#222'
+      top-color: '#222'
+      bottom-color: '#222'
+server-tree:
+  font-family: 'Ubuntu Mono'
+  font-size: 12.0
+  background-color: '#000000'
+  highlight:
+    color: '#E9C062'
+  newtalk:
+    color: '#73AE2C'
+  unread:
+    color: '#5ED1BA'
+  normal:
+    active:
+      color: '#888'
+    inactive:
+      color: '#5e5960'
+  selected:
+    active:
+      color: '#C0C0C0'
+    inactive:
+      color: '#7c767e'
+    background:
+      # gradient
+      top-line-color: '#222'
+      bottom-line-color: '#222'
+      top-color: '#222'
+      bottom-color: '#222'
