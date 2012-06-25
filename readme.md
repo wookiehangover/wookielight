@@ -18,4 +18,4 @@ Support/Limechat/Themes`.
 
 ## This is what it looks like
 
-![Preview image](http://cl.ly/462Q3D213Z1T0v411L1a/Screen%20Shot%202011-12-18%20at%2011.30.11%20PM.png)
+![Preview image](http://cl.ly/372g261U3D170u240i2k/Screen%20Shot%202012-06-24%20at%207.06.30%20PM.png)
