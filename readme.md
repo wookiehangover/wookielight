@@ -1,8 +1,6 @@
 # Wookielight
 
-A [LimeChat](http://limechat.net/mac/) theme. Thanks to @danheberden's
-[Chimelat](https://github.com/danheberden/chimelat), each user is
-assigned one of 16 unqiue colors.
+A [LimeChat](http://limechat.net/mac/) theme. Each user is assigned one of 16 unqiue colors.
 
 ## Installation
 
