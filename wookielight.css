@@ -184,20 +184,22 @@ body.normal .sender[type=myself]:after {
 .effect[color-number] { color: inherit; background-color: inherit; font-style: italic; }
 
 /* colors! generated from http://jsbin.com/agavah */
-.line .color0 { color: rgb(252, 105, 105); }
-.line .color1 { color: rgb(105, 198, 252); }
-.line .color2 { color: rgb(252, 216, 105); }
-.line .color3 { color: rgb(122, 105, 252); }
-.line .color4 { color: rgb(179, 252, 105); }
-.line .color5 { color: rgb(233, 105, 252); }
-.line .color6 { color: rgb(105, 252, 142); }
-.line .color7 { color: rgb(252, 105, 161); }
-.line .color8 { color: rgb(105, 252, 252); }
-.line .color9 { color: rgb(252, 159, 105); }
-.line .color10 { color: rgb(105, 142, 252); }
-.line .color11 { color: rgb(235, 252, 105); }
-.line .color12 { color: rgb(179, 105, 252); }
-.line .color13 { color: rgb(125, 252, 105); }
-.line .color14 { color: rgb(252, 105, 216); }
-.line .color15 { color: rgb(105, 252, 196); }
 
+.sender[type=normal] { color: #3e87e3; }
+.sender[type=myself] { color: #89bdff; }
+.sender[type=normal][colornumber='0']  { color: rgb(255, 105, 105); }
+.sender[type=normal][colornumber='1']  { color: rgb(105, 198, 252); }
+.sender[type=normal][colornumber='2']  { color: rgb(252, 216, 105); }
+.sender[type=normal][colornumber='3']  { color: rgb(122, 105, 252); }
+.sender[type=normal][colornumber='4']  { color: rgb(179, 252, 105); }
+.sender[type=normal][colornumber='5']  { color: rgb(233, 105, 252); }
+.sender[type=normal][colornumber='6']  { color: rgb(105, 252, 142); }
+.sender[type=normal][colornumber='7']  { color: rgb(252, 105, 161); }
+.sender[type=normal][colornumber='8']  { color: rgb(105, 252, 252); }
+.sender[type=normal][colornumber='9']  { color: rgb(252, 159, 105); }
+.sender[type=normal][colornumber='10'] { color: rgb(105, 142, 252); }
+.sender[type=normal][colornumber='11'] { color: rgb(235, 252, 105); }
+.sender[type=normal][colornumber='12'] { color: rgb(179, 105, 252); }
+.sender[type=normal][colornumber='13'] { color: rgb(125, 252, 105); }
+.sender[type=normal][colornumber='14'] { color: rgb(252, 105, 216); }
+.sender[type=normal][colornumber='15'] { color: rgb(105, 252, 196); }
