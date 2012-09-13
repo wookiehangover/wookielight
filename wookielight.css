@@ -148,7 +148,7 @@ body.normal div.line[type=action] .sender[type=normal]::before, div.line[type=ac
 
 
 body.normal .line[highlight=true] {
-  -webkit-animation: myanim 8s infinite;
+  -webkit-animation: myanim 8s 5;
 }
 
 @-webkit-keyframes myanim {
