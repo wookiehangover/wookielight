@@ -8,11 +8,7 @@ Just clone the repo and run bootstrap script:
 
     $ ./bootstrap.sh
 
-**This assumes app store installation.** Ya know, since its available in
-the app store and all.  If you have a pre-existing install just replace
-the theme directory on line 10 with `~/Library/Application\
-Support/Limechat/Themes`.
-
+This works with both an App Store and download installation of Limechat.
 
 ## This is what it looks like
 
